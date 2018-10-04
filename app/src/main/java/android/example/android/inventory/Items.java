@@ -11,6 +11,16 @@ public class Items {
     private String mSupplierEmail;
     private int mImageResourceId=NO_IMAGE_PROVIDED;
 
+    public Items(String productName, int price, int quantity, String supplierName,
+                 String supplierPhone, String supplierEmail,int imageResourceId){
+        mProductName=productName;
+        mPrice=price;
+        mSupplierName=supplierName;
+        mSupplierPhone=supplierPhone;
+        mSupplierEmail=supplierEmail;
+        mImageResourceId=imageResourceId;
+    }
+
     public String getProductName(){
         return mProductName;
     }
